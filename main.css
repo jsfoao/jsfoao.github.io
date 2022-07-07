@@ -12,15 +12,14 @@ body{
 }
 
 .card{
-    color: white;
-    background-size: 400px;
+    width: 300px;
+    height: 300px;
+    border-radius: 0.5rem;
+    background-size: 180%;
     background-position: 0px 0px;
     background-image: url("PUAL_Marketing.png");
     background-color: darkgrey;
 
-    width: 220px;
-    height: 300px;
-    border-radius: 0.5rem;
     overflow: hidden;
     transition: transform 500ms ease;
 }
@@ -28,21 +27,35 @@ body{
 .card:hover{
     transform:scale(1.05);
 }
-.card-content{
+
+.gradient-overlay{
+    position: relative;
     height: 100%;
+    width: 100%;
     background: linear-gradient(
         hsl(0 0% 0% / 0),
-        hsl(0 0% 0% / 0.6) 35%,
-        hsl(0 0% 0% / 0.8)
+        hsl(0 0% 0% / 0.2) 50%,
+        hsl(0 0% 0% / 0.7) 80%,
+        hsl(0 0% 0% / 0.75)
     );
+}
 
+.card-content{
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
+    bottom: 0;
+    margin-bottom: 1.5rem;
 }
 
 .card-title{
-    margin-bottom: 0;
+    position: absolute;
     font-size: x-large;
+    bottom: 0;
+    margin-bottom: 1.8rem;
     transition: transform 500ms ease;
 }
 
@@ -51,9 +64,9 @@ body{
 }
 
 .card-description{
-    bottom: 48px;
     opacity: 0;
     transition: opacity 200ms ease-in;
+    margin-bottom: 0.8rem;
 }
 
 .card:hover .card-description{
@@ -71,7 +84,6 @@ body{
 .category-list{
     width: 100%;
     padding-left: 0rem;
-    margin-bottom: 0;
 }
 /*#endregion*/
 
