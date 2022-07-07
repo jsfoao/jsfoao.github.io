@@ -1,0 +1,86 @@
+body{
+    height: 100%;
+    background: rgb(56, 56, 56);
+    font-family: sans-serif;
+}
+
+/*#region Card*/
+.card-wrapper{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.card{
+    color: white;
+    background-size: 400px;
+    background-position: 0px 0px;
+    background-image: url("PUAL_Marketing.png");
+    background-color: darkgrey;
+
+    width: 220px;
+    height: 300px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+.card-content{
+    height: 100%;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / 0.6) 35%,
+        hsl(0 0% 0% / 0.8)
+    );
+
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.card-title{
+    margin-bottom: 0;
+    font-size: x-large;
+    transition: transform 500ms ease;
+}
+
+.card:hover .card-title{
+    transform:translateY(-160%);
+}
+
+.card-description{
+    bottom: 48px;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
+
+.card:hover .card-description{
+    opacity: 1;
+}
+
+.card-category{
+    font-size: small;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: .25em .75em;
+    border-radius: 100em;
+}
+
+.category-list{
+    width: 100%;
+    padding-left: 0rem;
+    margin-bottom: 0;
+}
+/*#endregion*/
+
+.card-list{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.list-wrapper{
+    width: 1px;
+}
