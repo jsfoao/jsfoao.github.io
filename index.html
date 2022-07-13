@@ -5,27 +5,212 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script></script>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="bg-img"></div>
+    <img id="bg-overlay" src="assets/img/BG_Rectangles.png" alt="">
     <div class="wrapper">
-        <ul class="card-list">
-            <li class="list-wrapper" style="display:inline">
-                <div class="card" onclick="location.href='#';" style="cursor: pointer;">
-                    <div class="gradient-overlay">
-                        <div class="card-content">
-                            <h1 class="card-title">Pack Up & Leaf</h1>
-                            <p class="card-description">Lorem ipsum dolor</p>
-                            <ul class="category-list">
-                                <li style="display:inline"><div class="card-category">Game</div></li>
-                                <li style="display:inline"><div class="card-category">Unity</div></li>
-                            </ul>
+        <!-- Nav bar-->
+        <div class="header" style="margin-bottom: 2rem;">
+            <div class="header-logo">
+                <div class="title">
+                    João Freire
+                </div>
+                <div class="subtitle">
+                    Programmer
+                </div>
+            </div>
+            <ul class="menu">
+                <li>
+                    <div class="menu-button">
+                        <div class="content">
+                            Portfolio
                         </div>
                     </div>
+                </li>
+                <li>
+                    <div class="menu-button">
+                        <div class="content">
+                            About
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-button">
+                        <div class="content">
+                            Career
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-button">
+                        <div class="image">
+                            <img src="assets/icons/github_logo.png" style="height: 100%;" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-button">
+                        <div class="image">
+                            <img src="assets/icons/linkedin_logo.png" style="height: 100%;" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Hello-->
+        <div id="hello-wrapper">
+            <div id="paragraph-wrapper">
+                <div class="category-button">
+                    <div class="title">
+                        Hello!
+                    </div>
+                    <img class="icon" src="assets/icons/external_link.png" alt="">
                 </div>
-            </li>
-        </ul>
+                <p id="profile-paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
+                </p>
+            </div>
+            <img src="assets/img/Circle-Profile-PNG.png" alt="" class="profile-pic">
+
+        </div>
+        <!-- Projects-->
+        <div class="category-wrapper">
+            <div class="category-button">
+                <div class="title">
+                    Projects
+                </div>
+                <img class="icon" src="assets/icons/external_link.png" alt="">
+            </div>
+
+            <ul class="card-list">
+                <div class="card" href='#'">
+                        <div class="card-image"></div>
+                        <video class="video" src="assets/videos/PUALTest.mp4" preload muted autoplay loop></video>
+                        <div class="gradient-overlay"></div>
+                        <div class="card-content">
+                            <div class="title-wrapper">
+                                <h1 class="card-title">Pack Up & Leaf</h1>
+                                <p class="card-description">Role: Programmer</p>
+                                <p class="card-description">Team: 12</p>
+                                <p class="card-description">Build Date: 01/01/2000</p>
+                                <p class="card-description">Time: 4 weeks</p>
+                            </div>
+                            <ul class="category-list">
+                                <li><div class="card-category">Game</div></li>
+                                <li><div class="card-category">Unity</div></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="card" href='#'">
+                        <div class="card-image"></div>
+                        <video class="video" src="assets/videos/PUALTest.mp4" preload muted autoplay loop></video>
+                        <div class="gradient-overlay"></div>
+                        <div class="card-content">
+                            <div class="title-wrapper">
+                                <h1 class="card-title">Pack Up & Leaf</h1>
+                                <p class="card-description">Role: Programmer</p>
+                                <p class="card-description">Team: 12</p>
+                                <p class="card-description">Build Date: 01/01/2000</p>
+                                <p class="card-description">Time: 4 weeks</p>
+                            </div>
+                            <ul class="category-list">
+                                <li><div class="card-category">Game</div></li>
+                                <li><div class="card-category">Unity</div></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="card" href='#'">
+                    <div class="card-image"></div>
+                    <video class="video" src="assets/videos/PUALTest.mp4" preload muted autoplay loop></video>
+                    <div class="gradient-overlay"></div>
+                    <div class="card-content">
+                        <div class="title-wrapper">
+                            <h1 class="card-title">Pack Up & Leaf</h1>
+                            <p class="card-description">Role: Programmer</p>
+                            <p class="card-description">Team: 12</p>
+                            <p class="card-description">Build Date: 01/01/2000</p>
+                            <p class="card-description">Time: 4 weeks</p>
+                        </div>
+                        <ul class="category-list">
+                            <li><div class="card-category">Game</div></li>
+                            <li><div class="card-category">Unity</div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" href='#'">
+                    <div class="card-image"></div>
+                    <video class="video" src="assets/videos/PUALTest.mp4" preload muted autoplay loop></video>
+                    <div class="gradient-overlay"></div>
+                    <div class="card-content">
+                        <div class="title-wrapper">
+                            <h1 class="card-title">Pack Up & Leaf</h1>
+                            <p class="card-description">Role: Programmer</p>
+                            <p class="card-description">Team: 12</p>
+                            <p class="card-description">Build Date: 01/01/2000</p>
+                            <p class="card-description">Time: 4 weeks</p>
+                        </div>
+                        <ul class="category-list">
+                            <li><div class="card-category">Game</div></li>
+                            <li><div class="card-category">Unity</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <!-- Career-->
+        <div class="category-wrapper">
+                <div class="content">
+                    <div>
+                        <div class="category-button">
+                            <div class="title">
+                                Career
+                            </div>
+                            <img class="icon" src="assets/icons/external_link.png" alt="">
+                        </div>
+                        <p class="content-paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <!-- About -->
+        <div class="category-wrapper">
+            <div class="content">
+                <div>
+                    <div class="category-button">
+                        <div class="title">
+                            About
+                        </div>
+                        <img class="icon" src="assets/icons/external_link.png" alt="">
+                    </div>
+                    <p class="content-paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="rights-reserved">
+            © 2022 João Freire. All rights reserved. 
+        </div>
     </div>
+
+
+    <!-- <script>
+        let clip = document.querySelector(".video")
+  
+        clip.addEventListener("mouseover", function (e) {
+           clip.play();
+        })
+  
+        clip.addEventListener("mouseout", function (e) {
+           clip.pause();
+        })
+     </script> -->
 </body>
 </html>
