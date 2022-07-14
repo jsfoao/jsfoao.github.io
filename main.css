@@ -2,7 +2,6 @@ body{
     height: 100%;
     font-family: "Poppins Regular";
     color: white;
-    z-index: 1;
     margin: 0;
 }
 
@@ -40,7 +39,7 @@ ul{
 .bg-image{
     position: fixed;
     margin: 0;
-    z-index: -2;
+    z-index: 0;
     height: 100%;
     width: 2200px;
 }
@@ -51,17 +50,19 @@ ul{
     opacity: 0.1;
     width: 120%;
     top: 5rem;
-    z-index: -1;
+    z-index: 500;
 }
 
 
 .wrapper{
+    position: relative;
     max-width: 1000px;
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding: 2.5rem;
     padding-top: 2rem;
+    z-index: 1000;
 }
 
 /*#region Category-Main*/
