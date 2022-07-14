@@ -197,19 +197,19 @@ ul{
 /*#endregion*/
 
 /*#region Card*/
-@media all and (max-width: 1100px) {
+@media all and (max-width: 600px) {
     .card{
         cursor: pointer;
         position: relative;
         min-width: 220px;
         width: 100%;
-        height: 15rem;
+        height: 12.5srem;
         border-radius: 0.5rem;
         margin: 0;
         overflow: hidden;
         transition: transform 500ms ease;
     }
-
+    
     .video{
         position: absolute;
         width: 100%;
@@ -219,7 +219,7 @@ ul{
     }
 }
 
-@media all and (min-width: 1100px){
+@media all and (min-width: 600px){
     .card{
         cursor: pointer;
         position: relative;
@@ -239,21 +239,22 @@ ul{
     
         transition: opacity 500ms ease;
     }
+
+    .card:hover .card-image{
+        opacity: 0;
+    }
+
+    .card:hover .video{
+        opacity: 1;
+    }
 }
 
 .card-image{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-image: url("PUAL_Marketing.png");
     background-color: darkgrey;
-    background-position: 0px 0px;
     transition: opacity 500ms ease;
-}
-
-.card:hover .card-image{
-    opacity: 0;
 }
 
 .card:hover{
@@ -273,9 +274,7 @@ ul{
     transition: opacity 500ms ease;
 }
 
-.card:hover .video{
-    opacity: 1;
-}
+
 
 .card-content{
     color: white;
@@ -341,6 +340,19 @@ ul{
 
 /*#region Card-List*/
 .card-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+.card-grid{
     width: 100%;
     height: 100%;
     display: flex;
