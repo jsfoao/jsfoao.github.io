@@ -1,15 +1,8 @@
-body{
-    height: 100%;
-    font-family: "Poppins Regular";
-    color: white;
-    margin: 0;
-}
-
 @font-face {
     font-family: "Poppins Regular";
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
-¨
+
 @font-face {
     font-family: "Poppins Light";
     src: url(assets/fonts/Poppins-Light.ttf);
@@ -25,7 +18,12 @@ body{
     src: url(assets/fonts/Poppins-ExtraBold.ttf);
 }
 
-
+body{
+    height: 100%;
+    font-family: "Poppins Regular";
+    color: white;
+    margin: 0;
+}
 
 ul{
     padding: 0;
