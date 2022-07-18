@@ -18,6 +18,10 @@
     src: url(assets/fonts/Poppins-ExtraBold.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100%;
     font-family: "Poppins Regular";
@@ -135,8 +139,9 @@ ul{
 }
 
 .profile-pic{
+    clip-path: circle(100px at 55% 45%);
     display: inline-block;
-    width: 15rem;
+    width: 210px;
     padding-left: 2rem;
 }
 
@@ -175,6 +180,7 @@ ul{
     transition: opacity 500ms;
 }
 
+
 .arrow-icon{
     height: 16px;
     transform-origin: 50%;
@@ -202,7 +208,7 @@ ul{
         position: relative;
         min-width: 220px;
         width: 100%;
-        height: 12.5srem;
+        height: 12.5rem;
         border-radius: 0.5rem;
         margin: 0;
         overflow: hidden;
@@ -214,6 +220,14 @@ ul{
         width: 100%;
         opacity: 0;
     
+        transition: opacity 500ms ease;
+    }
+
+    .card-image{
+        position: absolute;
+        width: 100%;
+        height: 220px;
+        background-color: darkgrey;
         transition: opacity 500ms ease;
     }
 }
@@ -246,14 +260,21 @@ ul{
     .card:hover .video{
         opacity: 1;
     }
-}
 
-.card-image{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: darkgrey;
-    transition: opacity 500ms ease;
+    .card-image{
+        position: absolute;
+        width: 100%;
+        background-color: darkgrey;
+        transition: opacity 500ms ease;
+    }
+
+    .card:hover .title-wrapper{
+        transform: translateY(-15%);
+    }
+
+    .card:hover .card-description{
+        opacity: 1;
+    }
 }
 
 .card:hover{
@@ -301,20 +322,12 @@ ul{
     margin-bottom: 0.3em;
 }
 
-.card:hover .title-wrapper{
-    transform: translateY(-15%);
-}
-
 .card-description{
     opacity: 0;
     margin: 0;
     font-family: "Poppins Regular";
     font-size: small;
     transition: opacity 200ms ease-in;
-}
-
-.card:hover .card-description{
-    opacity: 1;
 }
 
 .card-category{
