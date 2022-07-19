@@ -634,14 +634,25 @@ ul{
 }
 
 /*Expandable button*/
-.expandable-button{
-    cursor: pointer;
+.expandable-title{
     color: white;
     opacity: 0.7;
     font-family: "Poppins Regular";
     transition: opacity 500ms ease;
 }
 
+.expandable-button:hover .expandable-title{
+    opacity: 1;
+}
+
+.expandable-arrow{
+    height: 16px;
+    transform: translateX(10px) rotate(90deg);
+    transition: transform 250ms ease;
+}
+
 .expandable-content{
-    display: none;
+    overflow-y: hidden;
+    height: 0px;
+    transition: height 300ms ease;
 }

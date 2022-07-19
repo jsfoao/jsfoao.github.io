@@ -141,14 +141,17 @@
                     </p>
                 </div>
             </div>
-            <a class="expandable-button" onclick="OnClick(this)">
-                <div class="expandable-title">About</div>
+            <div class="expandable-button">
+                <a style="display: flex; align-items: center; cursor: pointer;" onclick="OnClick(this)">
+                    <div class="expandable-title">Code - Feature 01</div>
+                    <img src="assets/icons/front-arrow-icon.png" alt="" class="expandable-arrow">
+                </a>
                 <div class="expandable-content">
                     <img src="assets/img/projects/rouse/rouse-thumbnail.png" alt="" style="width:300px;">
                 </div>
-            </a>
+            </div>
             <a class="expandable-button" onclick="OnClick(this)">
-                <div class="expandable-title">About</div>
+                <div class="expandable-title">Code - Feature 02</div>
                 <div class="expandable-content">
                     <img src="assets/img/projects/rouse/rouse-thumbnail.png" alt="" style="width:300px;">
                 </div>
@@ -227,12 +230,15 @@
     </div>
     <script>
         function OnClick(element){
-            var content = element.getElementsByClassName('expandable-content')[0];
-            if (content.style.display === "none"){
-                content.style.display = "block";
+            var content = element.parentElement.getElementsByClassName('expandable-content')[0];
+            var arrow = element.parentElement.getElementsByClassName("expandable-arrow")[0];
+            if (content.style.height === "0px"){
+                content.style.height = "200px";
+                arrow.style.transform = "translateX(10px) rotate(-90deg)"
             }
             else{
-                content.style.display = "none";
+                content.style.height = "0px";
+                arrow.style.transform = "translateX(10px) rotate(90deg)"
             }
         }
     </script>
