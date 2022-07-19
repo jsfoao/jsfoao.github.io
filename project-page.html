@@ -12,6 +12,9 @@
     <img class="bg-image" src="assets/img/tram_bg.jpg" alt="">
     <img class="bg-overlay" src="assets/img/BG_Rectangles.png" alt="">
     <div class="wrapper">
+        <a class="return-top" onclick="topFunction()">
+            <img src="assets/icons/return-top-icon-2.png" alt="" style="height: 45px;" class="return-icon">
+        </a>
         <!-- Nav bar-->
         <div class="header" style="margin-bottom: 2rem;">
             <a class="header-logo" href="index.html">
@@ -147,15 +150,34 @@
                     <img src="assets/icons/front-arrow-icon.png" alt="" class="expandable-arrow">
                 </a>
                 <div class="expandable-content">
-                    <img src="assets/img/projects/rouse/rouse-thumbnail.png" alt="" style="width:300px;">
+                    <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">//</span> <span style="color: #f8f8f2">Your</span> <span style="color: #f8f8f2">First</span> <span style="color: #f8f8f2">C</span><span style="color: #f92672">++</span> <span style="color: #f8f8f2">Program</span>
+
+<span style="color: #75715e">#include &lt;iostream&gt;</span>
+
+<span style="color: #f8f8f2">int</span> <span style="color: #f8f8f2">main()</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">std::cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Hello World!&quot;</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+                </div>
+            <div class="expandable-button">
+                <a style="display: flex; align-items: center; cursor: pointer;" onclick="OnClick(this)">
+                    <div class="expandable-title">Code - Feature 01</div>
+                    <img src="assets/icons/front-arrow-icon.png" alt="" class="expandable-arrow">
+                </a>
+                <div class="expandable-content">
+                    <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">//</span> <span style="color: #f8f8f2">Your</span> <span style="color: #f8f8f2">First</span> <span style="color: #f8f8f2">C</span><span style="color: #f92672">++</span> <span style="color: #f8f8f2">Program</span>
+
+<span style="color: #75715e">#include &lt;iostream&gt;</span>
+
+<span style="color: #f8f8f2">int</span> <span style="color: #f8f8f2">main()</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">std::cout</span> <span style="color: #f92672">&lt;&lt;</span> <span style="color: #e6db74">&quot;Hello World!&quot;</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+
                 </div>
             </div>
-            <a class="expandable-button" onclick="OnClick(this)">
-                <div class="expandable-title">Code - Feature 02</div>
-                <div class="expandable-content">
-                    <img src="assets/img/projects/rouse/rouse-thumbnail.png" alt="" style="width:300px;">
-                </div>
-            </a>
             <div>
                 <div class="category-title-big">
                     About
@@ -240,6 +262,33 @@
                 content.style.height = "0px";
                 arrow.style.transform = "translateX(10px) rotate(90deg)"
             }
+        }
+
+        //Get the button:
+        var button = document.getElementsByClassName("return-top")[0];
+        var icon = document.getElementsByClassName("return-icon")[0];
+            
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+            
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 300) {
+                // button.style.opacity = 0.7;
+                // icon.height = "45px";
+                button.style.bottom = "20px";
+                // button.style.display = "block";
+            } else {
+                // button.style.opacity = 0;
+                // icon.height = "0px";
+                // button.style.display = "none";
+                button.style.bottom = "-50px";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
 </body>

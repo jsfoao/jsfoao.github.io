@@ -655,4 +655,20 @@ ul{
     overflow-y: hidden;
     height: 0px;
     transition: height 300ms ease;
+    margin-top: 0.5rem;
+}
+
+.return-top{
+    position: fixed;
+    bottom: -50px;
+    z-index: 2000;
+    right: 10%;
+    opacity: 1;
+    cursor: pointer;
+    transition: bottom 300ms ease, transform 300ms ease, filter 300ms ease;
+}
+
+.return-top:hover{
+    transform: scale(1.1);
+    filter: brightness(120%);
 }
