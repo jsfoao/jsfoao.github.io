@@ -18,6 +18,11 @@
     src: url(assets/fonts/Poppins-ExtraBold.ttf);
 }
 
+@font-face {
+    font-family: "Poppins SemiBold";
+    src: url(assets/fonts/Poppins-SemiBold.ttf);
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -626,4 +631,17 @@ ul{
         position: relative;
         max-height: 250px;
     }
+}
+
+/*Expandable button*/
+.expandable-button{
+    cursor: pointer;
+    color: white;
+    opacity: 0.7;
+    font-family: "Poppins Regular";
+    transition: opacity 500ms ease;
+}
+
+.expandable-content{
+    display: none;
 }

@@ -103,17 +103,9 @@
             </div>
         </div>
         <div class="project-category-wrapper">
-            <div class="flex-column">
-                <div>
-                    <div class="category-title-big">
-                        About
-                    </div>
-                    <p class="content-paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
-                    </p>
-                </div>
-                <div>
+            <div class="flex-column" style="gap: 2rem; margin-top: rem; margin-bottom: 2rem;">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/mP8MEGhTQcY" style="margin-right: 2rem;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div style="max-width: 250px;">
                     <div class="category-title-big">
                         Info
                     </div>
@@ -148,6 +140,27 @@
                             20/20/2020
                     </p>
                 </div>
+            </div>
+            <a class="expandable-button" onclick="OnClick(this)">
+                <div class="expandable-title">About</div>
+                <div class="expandable-content">
+                    <img src="assets/img/projects/rouse/rouse-thumbnail.png" alt="" style="width:300px;">
+                </div>
+            </a>
+            <a class="expandable-button" onclick="OnClick(this)">
+                <div class="expandable-title">About</div>
+                <div class="expandable-content">
+                    <img src="assets/img/projects/rouse/rouse-thumbnail.png" alt="" style="width:300px;">
+                </div>
+            </a>
+            <div>
+                <div class="category-title-big">
+                    About
+                </div>
+                <p class="content-paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius voluptatibus ullam neque ut laudantium.
+                </p>
             </div>
         </div>
         <div class="project-category-wrapper">
@@ -212,5 +225,16 @@
             © 2022 João Freire. All rights reserved. 
         </div>
     </div>
+    <script>
+        function OnClick(element){
+            var content = element.getElementsByClassName('expandable-content')[0];
+            if (content.style.display === "none"){
+                content.style.display = "block";
+            }
+            else{
+                content.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
