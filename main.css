@@ -44,7 +44,13 @@ ul{
 }
 
 .bullet-point{
-    list-style-type: square;
+    font-family: "Poppins Light";
+    padding-left: 2rem;
+    list-style-type: disc;
+}
+
+.bullet-li{
+    margin-bottom: 0.8rem;
 }
 
 .bg-image{
@@ -231,21 +237,20 @@ ul{
         margin: 0;
         overflow: hidden;
         transition: transform 500ms ease;
+        background-color: grey;
     }
     
     .video{
         position: absolute;
         width: 100%;
         opacity: 0;
-    
         transition: opacity 500ms ease;
     }
 
     .card-image{
         position: absolute;
-        width: 100%;
-        height: 220px;
-        background-color: darkgrey;
+        width: 150%;
+        background-size: 1000px 1000px;
         transition: opacity 500ms ease;
     }
 }
@@ -254,13 +259,13 @@ ul{
     .card{
         cursor: pointer;
         position: relative;
-        min-width: 220px;
-        width: 24%;
+        width: 240px;
         height: 20rem;
         border-radius: 0.5rem;
         margin: 0;
         overflow: hidden;
         transition: transform 500ms ease;
+        background-color: grey;
     }
 
     .video{
@@ -281,7 +286,7 @@ ul{
 
     .card-image{
         position: absolute;
-        width: 100%;
+        height: 100%;
         background-color: darkgrey;
         transition: opacity 500ms ease;
     }
@@ -525,6 +530,7 @@ ul{
     transform: translateX(-3px) translateY(6px);
 }
 .project-title-card{
+    background-color: grey;
     position: relative;
     height: 200px;
     width: 106%;
@@ -672,6 +678,11 @@ ul{
     transition: opacity 500ms ease;
 }
 
+.expandable-button{
+    margin-top: 0.rem;
+    width: 100%;
+}
+
 .expandable-button:hover .expandable-title{
     opacity: 1;
 }
@@ -684,6 +695,7 @@ ul{
 
 .expandable-content{
     overflow-y: hidden;
+    width: 100%;
     height: 0px;
     transition: height 300ms ease;
     margin-top: 0.5rem;
@@ -703,3 +715,35 @@ ul{
     transform: scale(1.1);
     filter: brightness(120%);
 }
+
+.code-snippet{
+    margin: 0;
+}
+
+/*#region Tables*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+td, th {
+    font-size: smaller;
+    border: 2px solid #b4b4b4;
+    text-align: left;
+    padding: 8px;
+}
+
+th{
+    background-color: rgba(255, 255, 255, 0.15);
+    font-family: "Poppins Regular";
+}
+
+tr{
+    font-family: "Poppins Light";
+    background-color: rgba(255, 255, 255, 0.08);
+}
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02)
+}
+/*#endregion*/
