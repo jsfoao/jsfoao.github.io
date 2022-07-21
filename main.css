@@ -357,7 +357,7 @@ ul{
     font-family: "Poppins Regular";
     font-size: small;
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgb(97, 97, 97);
     padding: .25em .75em;
     border-radius: 100em;
 }
@@ -729,21 +729,21 @@ table{
 }
 td, th {
     font-size: smaller;
-    border: 2px solid #b4b4b4;
+    border: 2px solid rgb(100, 100, 100);
     text-align: left;
     padding: 8px;
 }
 
 th{
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgb(56, 56, 56);
     font-family: "Poppins Regular";
 }
 
 tr{
     font-family: "Poppins Light";
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgb(80, 80, 80);
 }
 tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.02)
+    background-color: rgb(75, 75, 75)
 }
 /*#endregion*/
